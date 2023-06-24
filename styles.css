@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@200&family=Varela+Round&display=swap");
+.container {
+    display: flex;
+    height: 100vh;
+}
+.sidebar {
+    width: 300px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.sidebar .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: "Blinker", sans-serif;
+    font-family: "Varela Round", sans-serif;
+    
+}
+.sidebar .header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.sidebar .header h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+.sidebar .search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.sidebar .search-bar input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    font-family: "Blinker", sans-serif;
+    font-family: "Varela Round", sans-serif;
+}
+.sidebar .search-bar button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 10px;
+}
+.sidebar .contact-list {
+    overflow-y: auto;
+    max-height: calc(100vh - 250px);
+    font-family: "Blinker", sans-serif;
+    font-family: "Varela Round", sans-serif;
+}
+.sidebar .contact-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.sidebar .contact-item:hover, .sidebar .contact-item.active {
+    background-color: #ebebeb;
+}
+.sidebar .contact-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.sidebar .contact-details {
+    flex: 1;
+}
+.sidebar .contact-details h4 {
+    margin: 0;
+    font-size: 16px;
+}
+.sidebar .contact-details p {
+    margin: 0;
+    font-size: 14px;
+    color: #888888;
+}
+.chat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #ddd;
+    font-family: "Blinker", sans-serif;
+    font-family: "Varela Round", sans-serif;
+}
+.chat .header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+}
+.chat .header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.chat .header .contact-details {
+    flex: 1;
+}
+.chat .header .contact-details h4, .chat .header .contact-details p {
+    margin: 0;
+}
+.chat .header .contact-details p {
+    font-size: 12px;
+    color: #888888;
+}
+.chat .header .call-options {
+    display: flex;
+    align-items: center;
+}
+.chat .header .call-options button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 10px;
+}
+.chat .header .call-options button i {
+    color: #888888;
+}
+.chat .messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-image: url('whatsapp-bg.jpg');
+    background-repeat: repeat;
+    font-family: "Blinker", sans-serif;
+    font-family: "Varela Round", sans-serif;
+}
+.chat .message-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+}
+.chat .message-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: #f5f5f5;
+    font-family: "Blinker", sans-serif;
+    font-family: "Varela Round", sans-serif;
+}
+.chat .message-input button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 10px;
+}
+.sender{
+    float: right;
+    clear: both;
+}
+.receiver{
+    float: left;
+    clear: both;
+}
+.message p {
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: inline-block;
+    max-width: 70%;
+}
+.timestamp {
+    font-size: 12px;
+    color: #888888;
+    margin-left: 5px;
+}
+.sender .message p {
+    background-color: #DCF8C6;
+    color: #333333;
+}
+.receiver .message p {
+    background-color: #EDEDED;
+    color: #333333;
+}
+.message-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #e2e2e2;
+}
+.message-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+.message-input button {
+    background-color: #25D366;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.message-input button:hover {
+    background-color: #128C7E;
+}
